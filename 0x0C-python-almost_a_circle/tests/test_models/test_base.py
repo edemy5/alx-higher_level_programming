@@ -478,7 +478,6 @@ class TestBase_save_to_file_csv(unittest.TestCase):
         with self.assertRaises(TypeError):
             Square.save_to_file_csv([], 1)
 
-
 class TestBase_load_from_file_csv(unittest.TestCase):
     """Unittests for testing load_from_file_csv method of Base class."""
 
@@ -543,7 +542,6 @@ class TestBase_load_from_file_csv(unittest.TestCase):
     def test_load_from_file_csv_more_than_one_arg(self):
         with self.assertRaises(TypeError):
             Base.load_from_file_csv([], 1)
-
 
 if __name__ == "__main__":
     unittest.main()

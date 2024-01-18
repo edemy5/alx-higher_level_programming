@@ -785,6 +785,7 @@ class TestRectangle_update_kwargs(unittest.TestCase):
         self.assertEqual("[Rectangle] (89) 19/7 - 10/5", str(r))
 
 
+
 class TestRectangle_to_dictionary(unittest.TestCase):
     """Unittests for testing to_dictionary method of the Rectangle class."""
 
@@ -803,6 +804,7 @@ class TestRectangle_to_dictionary(unittest.TestCase):
         r = Rectangle(10, 2, 4, 1, 2)
         with self.assertRaises(TypeError):
             r.to_dictionary(1)
+
 
 if __name__ == "__main__":
     unittest.main()
